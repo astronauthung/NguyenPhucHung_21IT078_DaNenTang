@@ -5,14 +5,14 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 117, 117, 117),
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
           title: Text("I WAS RICH"),
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
 
         ),
         body: Center(
-          child: Image.file(File('images/red_diamond.png')),
+          child: Image.asset('images/red_diamond.png'),
           ),
         ),
       ),
