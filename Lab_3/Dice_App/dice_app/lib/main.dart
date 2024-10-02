@@ -5,12 +5,12 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: const Color.fromARGB(255, 255, 128, 211),
         appBar: AppBar(
           title: const Center(
             child: Text('DiceApp'),
           ),
-          backgroundColor: Colors.red,
+          backgroundColor: const Color.fromARGB(255, 255, 128, 211),
         ),
         body: const DicePage(),
       ),

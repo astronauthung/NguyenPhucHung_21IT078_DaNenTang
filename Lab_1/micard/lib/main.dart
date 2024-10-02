@@ -21,9 +21,14 @@ class MyApp extends StatelessWidget {
               radius: 40.0,
               backgroundImage: AssetImage('images/hung.jpg'),
             ),
-            const Text('Senior Intern',
-              style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold ,
-                color: Color.fromARGB(255, 0, 0, 0), fontFamily: 'Pacifico',),
+            const Text(
+              'Senior Intern',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 0, 0, 0),
+                fontFamily: 'Pacifico',
+              ),
             ),
             const SizedBox(
               height: 20.0,
@@ -32,33 +37,90 @@ class MyApp extends StatelessWidget {
               ),
             ),
             const Card(
-              margin: EdgeInsets.symmetric(vertical: 20.0,horizontal: 50.0),
-
-              color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.all(10.0),
-                child:Row(
-                  children: [
-                    Icon(Icons.call,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      width: 5.0,
-                    ),
-                    Text('+84 789 190903',key: Key('phoneNumber'),),
-                  ],
-                ),
-              ),
-            ),
-            const Card(
-              margin: EdgeInsets.symmetric(vertical: 2.0,horizontal: 50.0),
-
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
               color: Colors.white,
               child: Padding(
                 padding: EdgeInsets.all(10.0),
                 child: Row(
                   children: [
-                    Icon(Icons.email,
+                    Icon(
+                      Icons.cake,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 5.0,
+                    ),
+                    Text('19/09/2003'),
+                  ],
+                ),
+              ),
+            ),
+            const Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.home,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 5.0,
+                    ),
+                    Text('123 Farm Street, Vietnam'),
+                  ],
+                ),
+              ),
+            ),
+            const Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 5.0,
+                    ),
+                    Text('Farming, Coding, Reading'),
+                  ],
+                ),
+              ),
+            ),
+            const Card(
+              margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
+              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.call,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 5.0,
+                    ),
+                    Text('+84 789 190903', key: Key('phoneNumber')),
+                  ],
+                ),
+              ),
+            ),
+            const Card(
+              margin: EdgeInsets.symmetric(vertical: 2.0, horizontal: 50.0),
+              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
                       color: Colors.black,
                     ),
                     SizedBox(
@@ -69,12 +131,18 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            ElevatedButton(
-              child: const Text('Wanna see more?'),
-              onPressed:(){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const SecondScreen()));
-              },),
-
+            const SizedBox(height: 20,),
+            Padding(padding: const EdgeInsets.only(top: 20),
+            child: ElevatedButton(
+              child: const Text('WANNA SEE MORE?'),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SecondScreen()));
+              },
+            ),
+            )
           ],
         ),
       ),
@@ -92,7 +160,7 @@ class SecondScreen extends StatelessWidget {
         title: const Text('Second Screen'),
       ),
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-      body:Center(
+      body: Center(
         child: ElevatedButton(
           onPressed: () {
             Navigator.pop(context);

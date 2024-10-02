@@ -7,7 +7,7 @@ void main() {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-          title: Text("I AM RICH"),
+          title: const Text("I AM RICH"),
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
 
         ),
