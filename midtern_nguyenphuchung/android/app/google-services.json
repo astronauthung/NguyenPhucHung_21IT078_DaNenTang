@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "269667220393",
+    "project_id": "algriculture-8fafd",
+    "storage_bucket": "algriculture-8fafd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269667220393:android:0d3633cf09a274b899e2b8",
+        "android_client_info": {
+          "package_name": "com.example.midtern_nguyenphuchung"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBULvAR8YtgVTS-rCssvmQy14OsokXsDMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
