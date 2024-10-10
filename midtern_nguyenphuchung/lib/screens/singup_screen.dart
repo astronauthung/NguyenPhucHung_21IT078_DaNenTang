@@ -47,7 +47,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const SizedBox(
                 height: 20, // Adds space after the logo
               ),
-              reusableTextField("Enter password", Icons.lock, false, _passwordTextController),
+              reusableTextField("Enter password", Icons.lock, true, _passwordTextController),
               const SizedBox(
                 height: 20, // Adds space after the logo
               ),
