@@ -1,6 +1,6 @@
 # midtern_nguyenphuchung
 
-A new Flutter project.
+Midterm Project about Agriculture
 
 ## Getting Started
 
