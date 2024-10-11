@@ -27,8 +27,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         ),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centers content vertically
-            crossAxisAlignment: CrossAxisAlignment.center, // Centers content horizontally
+            mainAxisAlignment: MainAxisAlignment.center, 
+            crossAxisAlignment: CrossAxisAlignment.center, 
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(
@@ -64,7 +64,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   print("Error ${error.toString()}");
                 });
               }),
-            ],
+            ], 
           ),
         ),
       ),

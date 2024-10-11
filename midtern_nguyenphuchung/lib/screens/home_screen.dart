@@ -251,6 +251,12 @@ class _HomeScreenState extends State<HomeScreen> {
       });
       return;
     }
+    if (priceController.text.isEmpty) {
+      setState(() {
+        errorMessage = "Price of product is required.";
+      });
+      return;
+    }
 
     if (editingDocId == null) {
       // Adding a new product
