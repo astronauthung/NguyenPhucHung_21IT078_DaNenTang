@@ -22,29 +22,29 @@ class _SignInScreenState extends State<SignInScreen> {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-          color: Color.fromARGB(255, 255, 248, 240), // Updated color to FFF8F1
+          color: Color.fromARGB(255, 255, 248, 240), 
         ),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centers content vertically
-            crossAxisAlignment: CrossAxisAlignment.center, // Centers content horizontally
+            mainAxisAlignment: MainAxisAlignment.center, 
+            crossAxisAlignment: CrossAxisAlignment.center, 
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.2, // Adjust as necessary
+                  top: MediaQuery.of(context).size.height * 0.2,
                 ),
                 child: logoWidget("assets/images/logo.png"),
               ),
               const SizedBox(
-                height: 30, // Adds space after the logo
+                height: 30, 
               ),
               reusableTextField("Enter username", Icons.person, false, _emailTextController),
               const SizedBox(
-                height: 20, // Adds space after the logo
+                height: 20, 
               ),
               reusableTextField("Enter password", Icons.lock, true, _passwordTextController),
               const SizedBox(
-                height: 20, // Adds space after the logo
+                height: 20,
               ),
               signInSignUpButton(context, true, () {
                 FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -57,7 +57,6 @@ class _SignInScreenState extends State<SignInScreen> {
                   });
               }),
               signUpOption()
-              // Add more widgets here if needed
             ],
           ),
         ),

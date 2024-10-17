@@ -23,7 +23,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-          color: Color.fromARGB(255, 255, 248, 240), // Updated color to FFF8F1
+          color: Color.fromARGB(255, 255, 248, 240), 
         ),
         child: SingleChildScrollView(
           child: Column(
@@ -32,24 +32,24 @@ class _SignUpScreenState extends State<SignUpScreen> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.2, // Adjust as necessary
+                  top: MediaQuery.of(context).size.height * 0.2, 
                 ),
                 child: logoWidget("assets/images/logo.png"),
               ),
               const SizedBox(
-                height: 30, // Adds space after the logo
+                height: 30, 
               ),
               reusableTextField("Enter username", Icons.person, false, _userTextController),
               const SizedBox(
-                height: 20, // Adds space after the logo
+                height: 20, 
               ),
               reusableTextField("Enter email", Icons.email, false, _emailTextController),
               const SizedBox(
-                height: 20, // Adds space after the logo
+                height: 20,
               ),
               reusableTextField("Enter password", Icons.lock, true, _passwordTextController),
               const SizedBox(
-                height: 20, // Adds space after the logo
+                height: 20, 
               ),
               signInSignUpButton(context, false, () {
                 FirebaseAuth.instance
@@ -57,7 +57,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   email: _emailTextController.text, 
                   password: _passwordTextController.text)
                 .then((value) {
-                  // print("Create new account);
                   Navigator.push(context,
                     MaterialPageRoute(builder: (context) => HomeScreen()));
                 }).onError((error, stackTrace) {

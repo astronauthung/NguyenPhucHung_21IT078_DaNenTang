@@ -303,7 +303,6 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(title: const Text("Product Management")),
       body: Column(
         children: [
-          // Input Fields
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -353,7 +352,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
 
-          // Product List
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
               stream: firestoreService.getNotesStream(),
